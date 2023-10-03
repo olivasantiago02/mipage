@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script src="./JavaScript/main.js"></script>
 </head>
@@ -8,14 +9,14 @@
     <header id="miHeader">
         <h1>Santiago Oliva</h1>
         <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#presentacion">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul id="nav-links">
+                <li><a href="./index.html" class="nav-button">Inicio</a></li>
+                <li><a href="#presentacion" class="nav-button">Portafolio</a></li>
+                <li><a href="#contacto" class="nav-button">Contacto</a></li>
             </ul>
         </nav>
-    </header>
-    
+    </header>    
+
     <section id="bienvenidos">
         <div class="container">
             <h2>Bienvenidos a mi sitio web</h2>
@@ -75,45 +76,70 @@
             <div class="tarjetas">
                 <!-- Tarjeta 1 - Lenguaje 1 -->
                 <div class="tarjeta">
-                    <img src="./images/js.png" alt="Lenguaje 1">
+                    <figure>
+                        <img src="./images/js.png" alt="Lenguaje 1">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajej"></div>
                     </div>
                 </div>
                 <!-- Tarjeta 2 - Lenguaje 2 -->
                 <div class="tarjeta">
-                    <img src="./images/pythonm.png" alt="Lenguaje 2">
+                    <figure>
+                        <img src="./images/pythonm.png" alt="Lenguaje 2">
+                        <figcaption>Python</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajep"></div>
                     </div>
                 </div>
                 <!-- Tarjeta 3 - Lenguaje 3 -->
                 <div class="tarjeta">
-                    <img src="./images/react_original.png" alt="Lenguaje 3">
+                    <figure>
+                        <img src="./images/react_original.png" alt="Lenguaje 3">
+                        <figcaption>React</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajer"></div>
                     </div>
                 </div>
+                <!-- Tarjeta 4 - Lenguaje 4 -->
                 <div class="tarjeta">
-                    <img src="./images/html555.png" alt="Lenguaje 3">
+                    <figure>
+                        <img src="./images/html555.png" alt="Lenguaje 4">
+                        <figcaption>HTML</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajeh"></div>
                     </div>
                 </div>
+                <!-- Tarjeta 5 - Lenguaje 5 -->
                 <div class="tarjeta">
-                    <img src="./images/css3.png" alt="Lenguaje 3">
+                    <figure>
+                        <img src="./images/css3.png" alt="Lenguaje 5">
+                        <figcaption>CSS</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajec"></div>
                     </div>
                 </div>
+                <!-- Tarjeta 6 - Lenguaje 6 -->
                 <div class="tarjeta">
-                    <img src="./images/node1.png" alt="Lenguaje 3">
+                    <figure>
+                        <img src="./images/node1.png" alt="Lenguaje 6">
+                        <figcaption>Node.js</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajen"></div>
                     </div>
                 </div>
+                <!-- Tarjeta 7 - Lenguaje 7 -->
                 <div class="tarjeta">
-                    <img src="./images/c_original_logo_icon_146611.png" alt="Lenguaje 3">
+                    <figure>
+                        <img src="./images/c_original_logo_icon_146611.png" alt="Lenguaje 7">
+                        <figcaption>C</figcaption>
+                    </figure>
                     <div class="barra-progreso">
                         <div class="porcentajecc"></div>
                     </div>
@@ -182,7 +208,7 @@
     <section id="contacto" class="contacto">
         <div class="containercon">
             <h2 class="titulo-con-sombra">Contáctame</h2>
-            <form action="./php/main.php" method="post" class="formulario-contacto">
+            <form action="https://formspree.io/f/xpzgorvl" method="post" class="formulario-contacto">
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -206,6 +232,46 @@
             </form>
         </div>
     </section>
+
+    <section id="contact-section" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="user-avatar">
+                    <img src="./images/user.png" alt="Imagen de Usuario">
+                </div>
+                <h2 class="contact-name">Santiago Oliva</h2>
+                <div class="contact-actions">
+                    <a href="tel:tu-numero-de-telefono" class="contact-button call">Llamada</a>
+                    <a href="mailto:tu-correo@example.com" class="contact-button email">Correo</a>
+                    <a href="sms:tu-numero-de-telefono" class="contact-button message">Mensaje</a>
+                </div>
+                <div class="contact-info">
+                    <p>Argentina, Cordoba</p>
+                    <p>Desarrollador</p>
+                    <p>Front-End / Backend</p>
+                    <p>Libre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="containerfo">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Contacto</h3>
+                    <p>Dirección: Pasaje Alameda 2375</p>
+                    <p>Teléfono: +54 9 3515294930</p>
+                    <p>Correo: santipboliva@hotmail.com</p>
+                </div>
+                <div class="footer-creator">
+                    <h3>Power By:</h3>
+                    <div class="creator-name" id="creator-name">Santiago O.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
     
     
     

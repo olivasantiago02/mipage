@@ -31,12 +31,12 @@ function expandirImagen(img) {
     imagenExpandida.appendChild(imagen);
     imagenExpandida.appendChild(botonCerrar);
     document.body.appendChild(imagenExpandida);
-}
 
-// Función para cerrar la imagen expandida
-function cerrarImagen(imagenExpandida) {
-    document.body.removeChild(imagenExpandida);
-}
+    function cerrarImagen(imagenExpandida) {
+        // Remover la imagen expandida del DOM para ocultarla
+        document.body.removeChild(imagenExpandida);}
+};
+
 
 
 
