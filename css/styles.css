@@ -783,6 +783,55 @@ textarea:hover {
     .creador {
         margin: 0 auto; /* Esto centrará el nombre horizontalmente */
     }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 8px 10px;
+        margin-right: 8px; /* Espacio reducido entre los botones */
+      }
+    
+      /* Hacer que los botones estén en línea horizontal */
+      .contact-actions {
+        display: flex;
+        flex-direction: row; /* Dirección horizontal */
+        flex-wrap: wrap; /* Para que los botones se envuelvan cuando no haya suficiente espacio */
+        justify-content: center; /* Centrar horizontalmente los botones */
+      }
+
+      /* Centrar horizontalmente las imágenes */
+    .imagen-presentacion {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Reducir el tamaño de las imágenes */
+    .imagen-presentacion img {
+        width: 80%; /* Puedes ajustar el valor según tus preferencias */
+    }
+
+    .certificado img{
+        width: 12rem;
+    }
+
+    .boton-contacto {
+        background-color: #1877f2; /* Azul similar a Facebook */
+        color: white; /* Texto en blanco */
+        text-transform: uppercase; /* Texto en mayúsculas */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+        cursor: pointer; /* Cursor de puntero al pasar el mouse */
+    }
+    
+    /* Estilos al pasar el mouse */
+    .boton-contacto:hover {
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el mouse */
+        transform: translateY(-2px); /* Efecto de elevación */
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    }
+
 }
 
 
